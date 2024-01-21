@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "build123d-100-cad-exercises"
+version = "0.1.0"
+description = ""
+authors = ["Masahiro Wada <argon.argon.argon@gmail.com>"]
+readme = "README.md"
+packages = [{include = "build123d-100-cad-exercises"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+build123d = {git = "https://github.com/gumyr/build123d"}
+ipython = "^8.13.2"
+ipykernel = "^6.23.1"
+ocp-vscode = "2.0.13"
+matplotlib = "^3.7.2"
+jupyter-cadquery = "^3.5.2"
+cadquery-massembly = "1.0.0"
+ocpsvg = {git = "https://github.com/snoyer/ocpsvg"}
+trianglesolver = "^1.2"
+bd-warehouse = {git = "https://github.com/gumyr/bd_warehouse"}
+
+
+[tool.poetry.group.dev.dependencies]
+pyright = "^1.1.347"
+ruff = "^0.1.14"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
